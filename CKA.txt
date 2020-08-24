@@ -1,0 +1,104 @@
+Cluster Architecture, Installation & Configuration – 25%
+	Manage role based access control (RBAC)
+		https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+		https://kubernetes.io/docs/reference/access-authn-authz/authorization/
+		https://kubernetes.io/docs/concepts/policy/pod-security-policy/
+		https://kubernetes.io/docs/reference/access-authn-authz/node/
+		https://kubernetes.io/docs/reference/access-authn-authz/authentication/
+	Use Kubeadm to install a basic cluster
+		https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/
+		https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/
+		https://kubernetes.io/docs/reference/setup-tools/kubeadm/
+	Manage a highly-available Kubernetes cluster
+		https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology/
+		https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/
+		https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/setup-ha-etcd-with-kubeadm/
+		https://kubernetes.io/docs/tasks/administer-cluster/highly-available-master/
+	Provision underlying infrastructure to deploy a Kubernetes cluster
+	Perform a version upgrade on a Kubernetes cluster using Kubeadm
+		https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/
+	Implement etcd backup and restore
+		https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/
+	
+Workloads & Scheduling – 15%
+	Understand deployments and how to perform rolling update and rollbacks
+		https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+		https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/
+		https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#update-strategies
+	Use ConfigMaps and Secrets to configure applications
+		https://kubernetes.io/docs/concepts/configuration/configmap/
+		https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/
+		https://kubernetes.io/docs/concepts/configuration/secret/
+	Know how to scale applications
+		https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/
+		https://kubernetes.io/docs/tasks/run-application/scale-stateful-set/
+		https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
+	Understand the primitives used to create robust, self-healing, application deployments
+	Understand how resource limits can affect Pod scheduling
+		https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+		https://kubernetes.io/docs/concepts/policy/limit-range/
+		https://kubernetes.io/docs/concepts/policy/resource-quotas/
+		https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/quota-memory-cpu-namespace/
+		https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-default-namespace/
+		https://kubernetes.io/docs/tasks/configure-pod-container/assign-cpu-resource/
+		https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/
+		https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-constraint-namespace/
+	Awareness of manifest management and common templating tools
+		https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/
+		https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
+
+Services & Networking – 20%
+	Understand host networking configuration on the cluster nodes
+		https://kubernetes.io/docs/concepts/cluster-administration/networking/
+	Understand connectivity between Pods
+		https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/
+	Understand ClusterIP, NodePort, LoadBalancer service types and endpoints
+		https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
+		https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/
+	Know how to use Ingress controllers and Ingress resources
+		https://kubernetes.io/docs/concepts/services-networking/ingress/
+		https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/
+	Know how to configure and use CoreDNS
+		https://kubernetes.io/docs/tasks/administer-cluster/coredns/
+		https://kubernetes.io/docs/tasks/administer-cluster/dns-custom-nameservers/
+		https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/
+		https://kubernetes.io/docs/tasks/administer-cluster/dns-horizontal-autoscaling/
+	Choose an appropriate container network interface plugin
+		https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/
+		https://kubernetes.io/docs/concepts/cluster-administration/networking/
+
+Storage – 10%
+	Understand storage classes, persistent volumes
+		https://kubernetes.io/docs/concepts/storage/storage-classes/
+		https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/
+		https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+		https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/
+	Understand volume mode, access modes and reclaim policies for volumes
+		https://kubernetes.io/docs/concepts/storage/volumes/
+	Understand persistent volume claims primitive
+		https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims
+	Know how to configure applications with persistent storage
+		https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/
+
+Troubleshooting – 30%
+	Evaluate cluster and node logging
+		https://kubernetes.io/docs/concepts/cluster-administration/logging/
+		https://kubernetes.io/docs/tasks/debug-application-cluster/
+		https://kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/
+		https://kubernetes.io/blog/2015/06/cluster-level-logging-with-kubernetes/
+	Understand how to monitor applications
+		https://kubernetes.io/docs/tasks/debug-application-cluster/monitor-node-health/
+		https://kubernetes.io/docs/tasks/debug-application-cluster/
+		https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/
+		https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/
+	Manage container stdout & stderr logs
+		https://kubernetes.io/docs/concepts/cluster-administration/logging/
+	Troubleshoot application failure
+		https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application/
+		https://kubernetes.io/docs/tasks/debug-application-cluster/determine-reason-pod-failure/
+	Troubleshoot cluster component failure
+		https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/troubleshooting-kubeadm/
+		https://kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/
+	Troubleshoot networking
+		https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/
+		https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/
